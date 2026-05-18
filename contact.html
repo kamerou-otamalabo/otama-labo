@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ｜おたまラボ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="sub-page contact-page">
+
+  <!-- Hero / Banner（Contact） -->
+  <header class="hero hero-sub hero-contact">
+    <img
+      src="images/TOP/Tadpole_site_header1.jpg"
+      alt="オタマジャクシの観察と造形"
+      class="hero-img"
+    >
+    <div class="hero-content">
+      <h1>お問い合わせ</h1>
+      <p>制作・展示・教育活動について</p>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="content-wrapper">
+
+    <!-- 導入 -->
+    <p class="contact-lead">
+      オタマジャクシの立体模型制作、展示・教育活動に関するご相談を受け付けています。
+      内容に応じて、できる範囲で個別に対応いたします。
+    </p>
+
+    <!-- フォーム -->
+    <section class="contact-form">
+      <form action="mailto:yoshidan@neb.com" method="post" enctype="text/plain">
+
+        <div class="form-group">
+          <label for="name">お名前</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">メールアドレス</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="category">お問い合わせ内容</label>
+          <select id="category" name="category">
+            <option value="">選択してください</option>
+            <option value="figure">立体模型（フィギュア）制作について</option>
+            <option value="education">教育・展示・ワークショップについて</option>
+            <option value="research">研究・取材・その他のご相談</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">お問い合わせ内容（詳細）</label>
+          <textarea id="message" name="message" rows="6"></textarea>
+        </div>
+
+        <button type="submit" class="cta">送信する</button>
+      </form>
+    </section>
+
+    <!-- 補足 -->
+    <section class="contact-note">
+      <p class="soft-note">
+        ※ 内容やスケジュールによってはお受けできない場合があります。<br>
+        ※ 返信までに数日お時間をいただくことがあります。
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 おたまラボ｜吉田直樹（博士・農学）
+ | <a href="top.html">トップへ戻る</a></p>
+  </footer>
+
+</body>
+</html>
+
+<!--
+========================================
+CONTACTページ：将来対応メモ
+========================================
+
+■ 現在の実装について
+・form の action は mailto: を使用
+・環境依存（PC / スマホ / メールアプリ）あり
+・簡易的な問い合わせ用途としては問題なし
+・サーバー不要で運用可能
+
+■ 将来、安定運用に切り替える場合の選択肢
+1) 外部フォームサービス（おすすめ）
+   - Google Forms
+   - Formspree
+   - Basin
+   - Netlify Forms
+   → action 属性を書き換えるだけで対応可能
+
+2) サーバー側処理
+   - PHP（sendmail / SMTP）
+   - セキュリティ対策（スパム対策）必須
+
+■ 改善候補（必要になったら）
+・送信完了ページ（thank you）
+・自動返信メール
+・スパム対策（reCAPTCHA 等）
+・依頼種別（制作 / 教育 / 展示）選択肢追加
+
+※ 今は「Done is better than Perfect」でOK
+※ 問い合わせが増えた段階で対応する
+========================================
+-->

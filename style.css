@@ -128,6 +128,33 @@ footer {
 }
 
 /* =========================
+   Top Image（トップ画像、観察）
+========================= */
+
+.observation-images {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.observation-images img {
+  width: 32%;
+  height: auto;
+}
+
+
+@media (max-width: 600px) {
+  .observation-images {
+    flex-direction: column;
+  }
+
+  .observation-images img {
+    width: 100%;
+  }
+}
+
+/* =========================
    作者ページ（author.html）
 ========================= */
 
@@ -198,21 +225,6 @@ main p {
   }
 }
 
-/* =========================
-   Top Image（トップ画像、観察）
-========================= */
-
-.observation-images {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin: 20px 0;
-}
-
-.observation-images img {
-  width: 32%;
-  height: auto;
-}
 
 /* =========================
    Author Profile（プロフィール情報）

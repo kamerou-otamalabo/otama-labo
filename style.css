@@ -1131,7 +1131,7 @@ figure.conference-poster figcaption {
 .concept-inner {
   max-width: 900px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 
 .concept-inner h2 {

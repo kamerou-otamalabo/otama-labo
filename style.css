@@ -134,14 +134,14 @@ footer {
 .observation-images {
   display: flex;
   gap: 16px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   margin: 28px 0 12px;
-  flex-wrap: nowrap;
+  width: 100%;
 }
 
 .observation-images img {
-  width: 32%;
+  width: calc(33.333% - 11px);
   height: auto;
   display: block;
   border-radius: 12px;
@@ -149,6 +149,7 @@ footer {
 
 .observation-figure {
   margin: 2rem auto;
+  max-width: 900px;
 }
 
 .observation-figure figcaption {

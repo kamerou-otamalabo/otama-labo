@@ -1095,9 +1095,11 @@ figure.conference-poster figcaption {
    宣言セクション
 ========================= */
 
+
 .top-declaration {
   background: #f4f9f4;
   padding: 5rem 1.5rem 5.5rem;
+  text-align: left;
 }
 
 .declaration-inner {
@@ -1111,6 +1113,7 @@ figure.conference-poster figcaption {
 
 .declaration-inner p {
   margin-bottom: 1.8rem;
+	text-align: left;
 }
 
 .declaration-core {
